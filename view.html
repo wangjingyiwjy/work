@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<title></title>
+<style type="text/css">
+	body {
+	    margin: 0;
+	    font-family: "Microsoft YaHei";
+    }
+    ul{
+    	margin: 0;
+    }
+    ul li {
+    	list-style: none;
+    }
+    a {
+	color: inherit;
+	text-decoration: none;
+    }  
+    #effect {
+    	
+    	width: 1281px;
+    	height: 534px;
+    	overflow: hidden;
+    	background-image: url(images/effect.png);
+    }
+    #bg {
+    	margin: 0 auto;
+    	width: 100%;
+    	width: 1281px;
+    	height: 534px;
+    	overflow: hidden;
+    	background-image: url(images/bg.png);
+    }
+    #bgtittle {
+    	width: 1281px;`
+    	height: 131px;
+    }
+    .tittle {
+    	float:left;
+    	margin-right: 35px;
+    	height: 131px;
+    	line-height: 131px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+    #bgtittlt :hover {
+    	background-color: #1abc9c;
+    }
+    .logo:hover {
+    	color: #1abc9c;
+    }
+    .tittle:hover {
+    	color: #1abc9c;
+    }
+    .logo {
+    	float:left;
+    	margin-right: 667px;
+        height: 131px;
+    	line-height: 131px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+    #bigtittle {
+    	margin: 0 auto;
+    	position: absolute;
+        margin-left: 354px;
+        margin-top: 245px;
+        width: 800px;
+    	height: 131px;
+        font-size: 45px;
+        color: #ffffff;
+        float: left;
+        
+    }
+    #line {
+    	margin: 0 auto;
+    	position: absolute;
+    	margin-left: 314px;
+    	margin-top: 310px;
+    	height: 3px;
+    	width: 658px;
+    	background-color: #ffffff;
+    	float: left;
+    }
+    #smalltittle {
+    	margin: 0 auto;
+    	position: absolute;
+    	margin-left: 466px;
+    	margin-top: 330px;
+    	height: 20px;
+    	width: 500px;
+    	color: #ffffff;
+    	float: left;
+    	font-size: 21px;
+    }
+    #whitebg {
+    	margin: 0 auto;
+    	height: 2599px;
+        width: 1281px;
+        background-color: #ffffff;
+    }
+    #goahead {
+    	position: absolute;
+    	margin-top: 510px;
+    	margin-left: 530px;
+    	text-align: center;
+    	line-height: 50px;
+    	color: #ffffff;
+    	height: 50px;
+    	width: 221px;
+    	background-color: #AFEEEE;
+    	font-size: 20px;
+    }
+    #goahead:hover {
+    	background-color: #1abc9c;
+    }
+    #rap {
+    	margin-top: 165px;
+    	margin-left: 469px;
+    	color: #1abc9c;
+    	height: 27px;
+    	width: 360px;
+    	font-size: 34px;
+    	font-weight: bold;
+    	line-height: 27px;
+    }
+    #p {
+    	text-align: center;
+    	color: #adb9ba;
+    	height: 142px;
+    	width: 814px;
+    	font-size: 16px;
+    	
+    	margin-left: 230px;
+    	margin-top: 58px;
+      }
+      .icon {
+      	text-align: center;
+      	float: left;
+      	width: 146px;
+      	height: 129px;
+      	color: #1abc9c;
+      	margin-left: 226px;
+        margin-top: 81px;
+      }
+      .sp {
+      	float: left;
+      	margin-left: 130px;
+      	height: 172px;
+      	width: 1281px;
+      	margin-top: 40px;
+      }
+      .spcontent {
+      	float: left;
+      	margin-right: 113px;
+      	height: 172px;
+      	width: 267px;
+      	color: #b5bfc0;
+      	font-size: 16px;
+      }
+      .line2 {
+      	height: 2px;
+      	width: 1025px;
+      	margin-left: 150px;
+      	margin-top: 510px;
+      	background-color: #e6eaea;
+      }
+      #imgcontainer {
+      	float: left;
+      	height: 699px;
+      	width: 1281px;
+        margin-top: 81px;
+        
+      }
+      .img1 {
+      	height: 321px;
+      	width: 427px;
+      	float: left;
+      	margin-left: 130px;
+      	margin-top: 60px;
+      	background-image: url(images/first.png);
+      }
+      .img2 {
+      	height: 321px;
+      	width: 427px;
+      	float: left;
+      	margin-left: 130px;
+      	margin-top: 60px;
+      	background-image: url(images/second.png);
+      }
+      .search {
+      	height: 56px;
+      	width: 56px;
+        padding-left: 353px;
+        padding-top: 22px;
+      }
+      .img3 {
+      	height: 321px;
+      	width: 427px;
+      	float: left;
+      	margin-left: 130px;
+      	margin-top: 60px;
+      	background-image: url(images/third.png);
+      }
+      .img4 {
+      	height: 321px;
+      	width: 427px;
+      	float: left;
+      	margin-left: 130px;
+      	margin-top: 60px;
+      	background-image: url(images/fourth.png);
+      }
+      .green {
+        margin-top: 149px;
+      	background-color: #1abc9c;
+      	height: 97px;
+      	width: 427px;
+      }
+      .filter {
+      	height: 321px;
+      	width: 427px;
+      	float: left;
+        background-image: url(images/filter.png);
+      }
+      #word {
+      	padding-top: 25px;
+      	font-size: 20px;
+      	color: #ffffff;
+      	margin-left: 24px;
+      	margin-top: 110px;
+      }
+      #word2 {
+      	color: #297465;
+      	margin-left: 24px;
+      	margin-top: 5px;
+      }
+      .filter,
+      #word,
+      #word2,
+      .search,
+      .green {
+        visibility: hidden;
+      }
+      .img1:hover .filter {
+      	visibility: visible;
+      }
+      .img1:hover #word {
+      	visibility: visible;
+      }
+      .img1:hover #word2 {
+      	visibility: visible;
+      }
+      .img1:hover .search{
+      	visibility: visible;
+      }
+      .img1:hover .green {
+      	visibility: visible;
+      }
+      .img2:hover .filter {
+      	visibility: visible;
+      }
+      .img2:hover #word {
+      	visibility: visible;
+      }
+      .img2:hover #word2 {
+      	visibility: visible;
+      }
+      .img2:hover .search{
+      	visibility: visible;
+      }
+      .img2:hover .green {
+      	visibility: visible;
+      }
+      .img3:hover .filter {
+      	visibility: visible;
+      }
+      .img3:hover #word {
+      	visibility: visible;
+      }
+      .img3:hover #word2 {
+      	visibility: visible;
+      }
+      .img3:hover .search{
+      	visibility: visible;
+      }
+      .img3:hover .green {
+      	visibility: visible;
+      }
+      .img4:hover .filter {
+      	visibility: visible;
+      }
+      .img4:hover #word {
+      	visibility: visible;
+      }
+      .img4:hover #word2 {
+      	visibility: visible;
+      }
+      .img4:hover .search{
+      	visibility: visible;
+      }
+      .img4:hover .green {
+      	visibility: visible;
+      }
+
+     
+      #btn {
+      	height: 60px;
+      	width: 233px;
+      	line-height: 60px;
+      	text-align: center;
+      	font-size: 22px;
+      	margin-top: 950px;
+      	margin-left: 539px;
+      	color: white;
+      	background-color: pink;
+      }
+      #btn:hover {
+        background-color: #1abc9c;
+      }
+       .line3 {
+      	height: 2px;
+      	width: 1025px;
+      	margin-left: 150px;
+      	margin-top: 80px;
+      	background-color: #e6eaea;
+      }
+      #touch {
+     	height: 37px;
+      	width: 296px;
+      	margin-left: 530px;
+      	margin-top: 80px;
+      	font-weight: bold;
+      	font-size: 40px;
+      	color: #1abc9c;
+      }
+      #bottom {
+      	margin: 0 auto;
+        width: 1281px;
+        height: 257px;
+        background-color: #1abc9c;
+        margin-top: 0px;
+      }
+      
+      .img {
+      	/*margin-top: 29px;
+      	margin-bottom: 29px;
+      	margin-left: 28px;
+      	margin-right: 38px;*/
+      	margin: 27px;
+      }
+      
+
+      .bc{
+      	padding-left: 225px;
+      	margin-right: 256px;
+      	margin-top: 151px;
+      	width: 1281px;
+      	float: left;
+      }
+      .wb {
+      	float: left;
+      	margin: 7px;
+      	margin-right: 256px;
+      	background: #f6f6f6;
+      	width: 96px;
+      	height: 96px;
+      }
+      .bb {
+      	float: left;
+      	margin-right: 256px;
+      	background-color: #78d8c5;
+      	width: 108px;
+      	height: 32px;
+      }
+   
+      .inputc {
+        float: left;  
+        padding-left: 190px;
+        margin-top: 81px;
+        font-size: 35px;
+      } 
+      .input1 {
+      	float: left;
+      	height: 78px;
+      	width: 395px;
+      	margin-right: 34px;
+      	background-color: #e4e8e8;
+      	font-size: 35px;
+      }
+     
+      .input {
+        height: 268px;
+      	width: 818px;
+      	background-color: #e4e8e8;
+      	margin-left: 231px;
+      	margin-right: 34px;
+      	margin-top: 31px;
+      	font-size: 40px;
+      }
+      .ha {
+      	float: left;
+ 	    margin-left: 129px;
+ 	    margin-right: 767px;
+ 	    width: 1281px;
+      }
+      .ha-li {
+        float: left;
+	    margin-right: 767px;
+      	margin-top: 156px;
+      	color: #ffffff;
+      	font-size: 21px;
+      }
+      .ha-li1 {
+        float: left;
+      	margin-top: 156px;
+      	color: #ffffff;
+      	font-size: 21px;
+      }
+      
+     
+</style>
+</head>
+<body>
+<div id="bg">
+	<div id="effect">
+		<div id="bgtittle">
+			<ul>
+				<li class="logo">
+				   <a href="##">LOGO</a>  
+				</li>
+				<li class="tittle">
+				    <a href="##">START</a> 
+				</li>
+				<li class="tittle">
+				    <a href="##">ABOUT ME</a>  
+				</li>	
+				<li class="tittle">
+				    <a href="">WORK</a> 
+				</li>
+				<li class="tittle">
+				    <a href="##">CONTACT</a> 
+				</li>
+			</ul>
+		<div>
+				<ul>
+					<li id="bigtittle">May I Introduce Myself?</li>
+				</ul>
+			</div>
+			<div id="line">
+				
+			</div>
+			<div id="smalltittle">
+				Frontend Design | UI/UX Design
+			</div>
+			<div id="goahead">
+				<a href="##">GO AHEAD</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div id="whitebg">
+	<div id="rap">
+		RAPHAEL &nbsp;LECHNER
+	</div>
+	<div id="p">
+		Lorem ipsum dolor sit ament,consestetur sadipscing elitr,sed diam nonumy eir mod tempor invident ut labore et dolore magna aliquyam erat,sed diam voluptua.At vero eos et accusam et justo duo dolor et ea rebam.Stet clita kasd gubergren,no sea  takinmata sannctus est Lorem dolor sit amet.Lorem ipsum dolor sit amet,consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolor magna aliquyam erat,sed diam voluptua.
+	</div>
+	<div class="icon">
+		<img src="images/icon.png" alt="icon">
+		Sketching Is Fun
+	</div>
+	<div class="icon">
+		<img src="images/Icon1.png" alt="icon1">
+		<br/>
+		Design Afterwards
+	</div>
+	<div class="icon">
+		<img src="images/Icon2.png" alt="icon2">
+		<br/>
+		Finalize
+	</div>
+	<div class="sp">
+		<ul>
+			<li class="spcontent">
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolor magna aliquyam erat,sed diam voluptua.At vero eos et accusam et justo duo dolo-res et rebum.Stet clita kasd gubergren.
+			</li>
+			<li class="spcontent">
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolor magna aliquyam erat,sed diam voluptua.At vero eos et accusam et justo duo dolo-res et rebum.Stet clita kasd gubergren.
+			</li>
+			<li class="spcontent">
+				Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolor magna aliquyam erat,sed diam voluptua.At vero eos et accusam et justo duo dolo-res et rebum.Stet clita kasd gubergren.
+			</li>
+		</ul>
+	</div>
+	<div class ="line2">
+		
+	</div>
+	<div id="imgcontainer">
+		<ul>
+			<div class="img1" >
+				<div class="filter">
+						  <div class="search">
+							<img src="images/search.png">
+						  </div>
+					      <div class="green">
+						    <div id="word">
+						       Lorem Ipsum Dorlor Sit
+						    </div>  
+					        <div id="word2">
+						       amet consetetur sadipscing elitr
+						    </div>
+					      </div>
+				</div>
+			</div>
+
+			<div class="img2">
+				<div class="filter">
+				  <div class="search">
+					<img src="images/search.png">
+				  </div>
+			      <div class="green">
+				    <div id="word">
+				       Lorem Ipsum Dorlor Sit
+				    </div>  
+			        <div id="word2">
+				       amet consetetur sadipscing elitr
+				    </div>
+			      </div>
+			    </div>
+			</div> 
+
+			<div class="img3">
+				<div class="filter">
+						  <div class="search">
+							<img src="images/search.png">
+						  </div>
+					      <div class="green">
+						    <div id="word">
+						       Lorem Ipsum Dorlor Sit
+						    </div>  
+					        <div id="word2">
+						       amet consetetur sadipscing elitr
+						    </div>
+					      </div>
+				</div>
+			</div>
+
+			<div class="img4">
+				<div class="filter">
+						  <div class="search">
+							<img src="images/search.png">
+						  </div>
+					      <div class="green">
+						    <div id="word">
+						       Lorem Ipsum Dorlor Sit
+						    </div>  
+					        <div id="word2">
+						       amet consetetur sadipscing elitr
+						    </div>
+					      </div>
+				</div>
+			</div>
+		</ul>
+	</div>
+	<div id="btn">
+		<a href="##">VIEW MORE </a>
+	</div>
+	<div class="line3">
+		
+	</div>
+	<div id="touch">
+		Get in touch!
+	</div>
+	<div class="inputc">
+	<ul>
+		<li class="input1">
+			<input style="text" class="input1" placeholder="&nbsp;&nbsp;Name">
+		</li>
+		<li class="input1">
+			<input style="text" class="input1" placeholder="&nbsp;&nbsp;Email">
+		</li>
+	</ul>
+	    
+	</div>
+	<div>
+		<textarea class="input" placeholder="&nbsp;How can I help you?"></textarea>
+	</div>
+	<div class="bc">
+		<div class="bb">
+			<div class="wb">
+				<img src="images/twitter.png" alt="twitter" class="img">
+			</div>
+		</div>
+		<div class="bb">
+			<div class="wb">
+				<img src="images/ball.png" alt="ball" class="img">
+			</div>
+		</div>
+		<div class="bb">
+			<div class="wb">
+				<img src="images/facebook.png" alt="facebook" class="img">
+			</div>
+		</div>
+
+	</div>
+	
+
+
+</div>
+
+<div id="bottom">
+		<div class="ha">
+			
+				<div class="ha-li">
+					©Raphael Lechner
+				</div>
+				<div class="ha-li1">
+					Imprint
+				</div>
+			
+		</div>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
